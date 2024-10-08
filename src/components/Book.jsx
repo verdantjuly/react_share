@@ -5,7 +5,7 @@ function Book(props) {
 
   // 리턴 엘리먼트는 하나로 묶어줘야 한다. <> </> 도 사용 가능
   return (
-    <div>
+    <div className="book">
       <h1>이 책의 이름은 {title}입니다.</h1>
       <h2>이 책의 저자는 {author}입니다.</h2>
     </div>
