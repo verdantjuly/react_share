@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Book from "./components/Book";
 
 // JSX
 const element = <h1 className="greeting">Hello JSX</h1>;
@@ -20,7 +21,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <App />
+    <Book />
+    <Book />
+    <Book />
+    <Book />
+    <Book />
   </React.StrictMode>
 );
 
