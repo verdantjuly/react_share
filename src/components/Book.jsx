@@ -1,11 +1,13 @@
 // 함수 컴포넌트를 클래스 컴포넌트보다 19년도부터 더 많이 쓴다.
 
-function Book() {
+function Book(props) {
+  const { title, author } = props;
+
   // 리턴 엘리먼트는 하나로 묶어줘야 한다. <> </> 도 사용 가능
   return (
     <div>
-      <h1>이 책의 이름은 처음 만나는 리액트입니다.</h1>
-      <h2>이 책의 저자는 이인제입니다.</h2>
+      <h1>이 책의 이름은 {title}입니다.</h1>
+      <h2>이 책의 저자는 {author}입니다.</h2>
     </div>
   );
 }
